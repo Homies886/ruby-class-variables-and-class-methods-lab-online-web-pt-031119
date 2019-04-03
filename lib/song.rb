@@ -37,7 +37,13 @@ class Song
     @@genre_count
   end
   
-  
+  ef self.artist_count
+    count = 0
+    @@artists.each do |artist|
+      @@artist_count[artist] = count += 1
+    end 
+    @@artist_count
+  end
   
   
 end
