@@ -31,7 +31,7 @@ class Song
     genre_count = {}
     count = 0
     @@genres.each do |genre|
-      genre_count[genre] = count += 1 unless genre_count.include?(genre) do |genre| genre_count[genre] = 1
+      genre_count[genre] = count += 1 
     end
     genre_count
   end
