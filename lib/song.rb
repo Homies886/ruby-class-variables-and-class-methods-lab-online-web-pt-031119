@@ -31,7 +31,7 @@ class Song
   
   def self.genre_count
     count = 0
-    @@genres.map do |genre|
+    @@genres.each do |genre|
       @@genre_count[genre] = count += 1
     end 
     @@genre_count
