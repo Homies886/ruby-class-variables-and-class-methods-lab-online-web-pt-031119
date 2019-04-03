@@ -30,12 +30,9 @@ class Song
   end
   
   def self.genre_count
+    count = 0
     @@genres.each do |genre|
-      count = 0
-      if genre.uniq
-        << genre => (count += 1)
-      else
-        
+      << genre => (count += 1)
       
       
   
