@@ -31,13 +31,13 @@ class Song
   
   def self.genre_count
     
-    count = 0
-    @@genres.each do |genre|
-      @@genre_count << genre => (count =+ 1) unless @@genre_count.has_key?(genre) then @@genre_count[genre] += 1
-      end
-    end
-   end     
+    #count = 0
+    #@@genres.each do |genre|
+    #  @@genre_count << genre => (count =+ 1) unless @@genre_count.has_key?(genre) then @@genre_count[genre] += 1
+    #  end
+    #end
+  #end     
       
     @@genre_count[@@genres.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
-  
+  end
 end
