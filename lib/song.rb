@@ -39,6 +39,5 @@ class Song
   #end     
       
     @@genre_count[@@genres.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
-    @@genre_count
   end
 end
