@@ -33,7 +33,8 @@ class Song
     genre_count = {}
     count = 0
     @@genres.each do |genre|
-      genre_count << 
+      if genre_count.has_key?(genre)
+        
       
       
   
