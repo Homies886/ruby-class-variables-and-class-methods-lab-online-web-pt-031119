@@ -35,7 +35,7 @@ class Song
     @@genres.each do |genre|
       @@genre_count << genre => (count =+ 1) unless @@genre_count.has_key?(genre) then @@genre_count[genre] += 1
     end
-        
+   end     
       
       
   
