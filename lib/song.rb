@@ -32,7 +32,10 @@ class Song
   def self.genre_count
     @@genres.each do |genre|
       count = 0
-      genre 
+      if genre.uniq
+        << genre => (count += 1)
+      else
+        
       
       
   
